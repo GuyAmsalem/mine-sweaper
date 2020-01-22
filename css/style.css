@@ -1,0 +1,9 @@
+td{
+    height: 30px;
+    width: 30px;
+    background-color: darkgray;
+}
+
+.clicked{
+    background-color: lightgray;
+}
