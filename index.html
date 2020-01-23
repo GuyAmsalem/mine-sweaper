@@ -6,16 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Zhi+Mang+Xing&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
-<body onload="initGame()"> 
-    <h1>SHULA</h1>
-    
-    <div class="board"></div>
+<body onload="initGame()">
+        <h1 class="header">Mine Sweeper</h1>
+        <div class="top-container">
+            <div class="level-line">
+                <button class="btn-begginer" onclick="changeLevel(this)" data-size=4 data-mines=2>Begginer</button>
+                <button class="btn-medium" onclick="changeLevel(this)" data-size=8 data-mines=12>Medium</button>
+                <button class="btn-expert" onclick="changeLevel(this)" data-size=12 data-mines=30>Expert</button>
+            </div>
+            <button class="hint" onclick="startHintMode(this)">💡💡💡</button>
+            <button class="emojy" onclick="startOver()">🙂</button>
+            <button class="safe-click" onclick="safeClick()">Safe Click: <span class="clicks">3</span></button>
+            <span class="lives">💖💖💖</span>
 
-    <script src="./js/util.js"></script>
-    <script src="./js/game.js"></script>
+            <div>Time: <span class="timer">0</span></div>
+        </div>
+        <div class="board"></div>
+    <script src="js/util.js"></script>
+    <script src="js/game.js"></script>
 </body>
 
 </html>

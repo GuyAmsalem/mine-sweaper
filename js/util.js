@@ -13,7 +13,7 @@ function getRandomIntInclusive(min, max) {
 }
 
 function renderBoard(mat, selector) {
-  var strHTML = '<table border="1"><tbody>';
+  var strHTML = '<table class="center" border="1"><tbody>';
   for (var i = 0; i < mat.length; i++) {
     strHTML += '<tr>';
     for (var j = 0; j < mat[0].length; j++) {
@@ -40,4 +40,11 @@ function renderCell(location, value) {
 function getClassName(location) {
   var strHtml = `cell${location.i}-${location.j}`;
   return strHtml;
+}
+
+function getMatRndIdx(board){
+  var posI = getRandomIntInclusive(0, board.length - 1);
+  var posJ = getRandomIntInclusive(0, board[0].length - 1);
+  return {i: posI, j: posJ};
+
 }
