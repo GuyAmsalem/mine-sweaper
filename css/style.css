@@ -31,6 +31,13 @@ td{
     font-family: 'Indie Flower', cursive , sans-serif;
     font-weight: bold;
 }
+.emojy{
+    background-color: lightblue;
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+
+}
 .level-line button{
     border: none;
     color: white;
@@ -58,4 +65,20 @@ td{
 
 .btn-expert{
     background-color: red;
+}
+.best-score{
+    margin-top: 20px;
+    font-family: 'Indie Flower', cursive , sans-serif;
+    font-weight: bold;
+}
+.best-score .top-header{
+    font-size: 25px;
+}
+.best-score .header{
+    font-size: 20px;
+    border-bottom:lightblue ;
+}
+.best-score td{
+    width: 100px;
+    height: 20px;
 }

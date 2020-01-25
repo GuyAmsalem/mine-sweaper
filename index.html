@@ -19,13 +19,39 @@
                 <button class="btn-expert" onclick="changeLevel(this)" data-size=12 data-mines=30>Expert</button>
             </div>
             <button class="hint" onclick="startHintMode(this)">💡💡💡</button>
-            <button class="emojy" onclick="startOver()">🙂</button>
             <button class="safe-click" onclick="safeClick()">Safe Click: <span class="clicks">3</span></button>
             <span class="lives">💖💖💖</span>
-
+            <div>
+                <button class="emojy" onclick="startOver()">🙂</button>
+            </div>
             <div>Time: <span class="timer">0</span></div>
         </div>
         <div class="board"></div>
+        <table class="best-score center">
+            <thead class="top-header">
+                <tr>
+                    <td colspan="2">🥇Hall of Fame🥇</td>
+                </tr>
+               </thead> 
+            <tbody>
+                <tr class="header">
+                    <td>Level</td>
+                    <td>Time</td>
+                </tr>
+                <tr>
+                    <td>Begginer</td>
+                    <td class="begginer"></td class="begginer">
+                </tr>
+                <tr>
+                    <td>Medium</td>
+                    <td class="medium"></td>
+                </tr>
+                <tr>
+                    <td>Extreme</td>
+                    <td class="extreme"></td>
+                </tr> 
+            </tbody>
+        </table>
     <script src="js/util.js"></script>
     <script src="js/game.js"></script>
 </body>
